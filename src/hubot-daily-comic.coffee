@@ -11,6 +11,7 @@
 # Commands:
 #   hubot show me dilbert - gets the daily dilbert
 #   hubot show me xkcd - gets the daily xkcd
+#   hubot show me devopsreactions - gets daily devopsreactions
 #
 # Author:
 #   Remko Plantenga <sonata82@gmail.com>

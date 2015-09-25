@@ -11,7 +11,8 @@
     "hubot-scripts",
     "comic",
     "dilbert",
-    "xkcd"
+    "xkcd",
+    "devopsreactions"
   ],
   "dependencies": {
     "coffee-script": "^1.7.1",
