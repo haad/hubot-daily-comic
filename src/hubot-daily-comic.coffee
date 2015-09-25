@@ -17,7 +17,7 @@
 
 DailyComic = require "daily-comic.js"
 
-comic = new DailyComic  updateInterval: process.env.HUBOT_DAILY_COMIC_INTERVAL or 3600 * 6, subscriptions: [ "xkcd", "dilbert" ]
+comic = new DailyComic  updateInterval: process.env.HUBOT_DAILY_COMIC_INTERVAL or 3600 * 6, subscriptions: [ "xkcd", "dilbert", "devopsreactions"]
 
 module.exports = (robot) ->
 
@@ -28,7 +28,7 @@ module.exports = (robot) ->
       for room in allRooms
         robot.messageRoom room, "new #{ comic }: #{ data.url }"
 
-  robot.respond /((show|fetch)( me )?)?(xkcd|dilbert)/i, (msg) ->
+  robot.respond /((show|fetch)( me )?)?(xkcd|dilbert|devopsreactions)/i, (msg) ->
     name = msg.match[4]
     cmc = comic.get name
     if cmc

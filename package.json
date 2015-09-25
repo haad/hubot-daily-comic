@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "coffee-script": "^1.7.1",
-    "daily-comic.js": "0.0.4"
+    "daily-comic.js": "haad/daily-comic.js#master"
   },
   "devDependencies": {
     "chai": "^1.9.1",
