@@ -7,6 +7,7 @@
 # Configuration:
 #   HUBOT_ANNOUNCE_ROOMS - A comma separated list of rooms to announce new comics
 #   HUBOT_DAILY_COMIC_INTERVAL - Number of seconds between checking for new comics (default is 6 hours)
+#   HUBOT_DAILY_COMMICS - A comma separated list of commics to watch
 #
 # Commands:
 #   hubot show me dilbert - gets the daily dilbert
