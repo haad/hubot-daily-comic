@@ -18,7 +18,9 @@
 
 DailyComic = require "daily-comic.js"
 
-comic = new DailyComic  updateInterval: process.env.HUBOT_DAILY_COMIC_INTERVAL or 3600 * 6, subscriptions: [ "xkcd", "dilbert", "devopsreactions"]
+daily_commics = if process.env.HUBOT_DAILY_COMMICS then process.env.HUBOT_DAILY_COMMICS.split(',') else ["xkcd", "dilbert"]
+
+comic = new DailyComic  updateInterval: process.env.HUBOT_DAILY_COMIC_INTERVAL or 3600 * 6, subscriptions: daily_commics
 
 module.exports = (robot) ->
 
